@@ -197,6 +197,11 @@ p {
 }
 
 
+/* -------------------------NOSOTROS------------------------ */
+
+
+
+
 
 
 
@@ -242,6 +247,26 @@ p {
         display: grid;
         grid-template-columns: 2fr 1fr;
         column-gap: 4rem;
-    }      
+    }     
+    
+    
+    /* -------------------------NOSOTROS------------------------ */
+
+    /* PARA UBICARLOS EN LINEA Y DARLES TAMAÑO DEL 50% A CADA ELEMENTO */
+    /* .sobre-nosotros {
+        display: flex;
+        gap: 2rem;
+    }
+    .sobre-nosotros__imagen,
+    .sobre-nosotros__texto {
+        flex-basis: 50%;
+    } */
+    /* ESTO ES LO MISMO CON GRID*/
+    .sobre-nosotros {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+
 }
 

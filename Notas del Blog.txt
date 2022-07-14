@@ -69,4 +69,26 @@ Propiedad para que el botón en resoluciones uperiores a 480px respete ancho y a
 {
 
 
+------------------------NOSOTROS-------------------------
+
+@media (min-width: 768px)
+/* PARA UBICARLOS EN LINEA Y DARLES TAMAÑO DEL 50% A CADA ELEMENTO */
+    .sobre-nosotros {
+        display: flex;
+        gap: 2rem;
+    }
+
+    .sobre-nosotros__imagen,
+    .sobre-nosotros__texto {
+        flex-basis: 50%;
+    }
+
+/* ESTO ES LO MISMO CON GRID*/
+    .sobre-nosotros {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+
+
 
