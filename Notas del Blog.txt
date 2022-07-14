@@ -1,0 +1,72 @@
+NOTAS DEL BLOG
+
+Para hacer que la imagen principal cada vez que se achique, esta busque siempre el centro de la imagen
+
+.header {
+    background-image: url(../img/banner.jpg);
+    height: 60rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    /* PARA HACER FLUIR LA IMAGEN HACIA EL CENTRO DE LA MISMA CUANDO SE ACHIQUE*/
+    background-position: center;
+}
+
+
+
+Para la barra de navegación superior a 480 px in line
+
+@media (min-width: 480px){
+    .barra {
+        display: flex; /* PARA PONERLOS UN AL FRENTE DEL OTRO */
+        justify-content: space-around; /* PARA DISTRIBUIRLOS EN TODA LA PAGINA */
+        align-items: center; /* PARA ALINEARLOS A LA MISMA ALTURA */  
+    }
+
+    .navegacion {
+        display: flex;
+        gap: 2rem;/* ESTO ES LO MISMO  */     
+    }
+    /* QUE ESTO */
+    /* .navegacion__enlace {
+        margin: 2rem;    
+    }  */
+    
+
+Para el main en 3 secciones de cuadricula en resolución superior a 768
+
+@media (min-width: 768px){
+
+    /* CUADRICULA DE 3 CON SIDEBAR */
+    .contenido_principal {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        column-gap: 4rem;
+    }
+    
+}
+
+
+Estilo en el borde inferior de las secciones
+
+/* ESTILO DE BORDE SUPERIOR   */
+.entrada {
+        border-bottom: 1px solid var(--primario);
+        margin-bottom: 2rem;
+}
+ /*   */
+.entrada:last-of-type {
+    border: none;
+    margin-bottom: 0;
+}
+
+Propiedad para que el botón en resoluciones uperiores a 480px respete ancho y alto
+
+@media (min-width: 480px){
+.boton {
+        display: inline-block;
+    }
+{
+
+
+
