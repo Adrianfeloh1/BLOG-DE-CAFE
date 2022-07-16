@@ -152,6 +152,8 @@ p {
     text-transform: uppercase;
     font-weight: bolder;
     margin-bottom: 2rem;
+    border: none;
+    cursor:pointer
 }
 
 .boton--primario {
@@ -217,6 +219,38 @@ p {
     text-align: center;
 }
 
+/* -------------------------CONTACTO------------------------ */
+
+.contacto-bg {
+    background-image: url(../img/contacto.jpg);
+    height: 42rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.formulario {
+    background-color: rgba(245, 245, 245, 0.62);
+    margin: -37rem auto 0 auto;
+    width: 90%;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+.campo {
+    display: flex;   
+    margin-bottom: 2rem;  
+    text-align: left;
+    gap: 1rem;
+}
+
+.campo__label {
+    flex: 0 0 7rem;    
+}
+
+.field{
+    flex: 1;
+    border: 1px solid rgb(179, 175, 175);
+}
 
 /* -------------------RESPONSIVE ----------------------- */
 
