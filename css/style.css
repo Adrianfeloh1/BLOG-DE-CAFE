@@ -196,23 +196,16 @@ p {
     padding: 3rem 0;
 }
 
+/* -------------------------CURSO------------------------ */
 
-/* -------------------------NOSOTROS------------------------ */
+.curso {
+    padding: 3rem 0;
+    border-bottom: 1px solid var(--primario);
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.curso:last-of-type {
+    border: none;
+}
 
 
 
@@ -238,6 +231,14 @@ p {
     .boton {
         display: inline-block;
     }
+
+    .barra-footer {
+        background-color: var(--negro);
+        margin-top: 4rem;
+        font-family: var(--fuenteHeading);
+        padding: 3rem 0;
+    }
+    
 }
 
 @media (min-width: 768px){
@@ -267,6 +268,25 @@ p {
         grid-template-columns: repeat(2, 1fr);
         gap: 2rem;
     }
+
+    .curso {
+        display: grid;
+        /* grid-template-columns: 33.3% 66.7%; ES LO MISMO */
+        grid-template-columns: 1fr 2fr;
+        gap: 2rem;
+    }
+
+    .curso__label{
+
+    }
+
+    .curso__info {
+
+    }
+
+    .curso {
+
+    }    
 
 }
 
