@@ -196,7 +196,11 @@ p {
     padding: 3rem 0;
 }
 
-/* -------------------------CURSO------------------------ */
+/* -------------------------CURSOS------------------------ */
+
+.centrar__titulos{
+    text-align: center;
+}
 
 .curso {
     padding: 3rem 0;
@@ -207,6 +211,11 @@ p {
     border: none;
 }
 
+/* -------------------------ENTRADA------------------------ */
+
+.imagen__entrada {
+    text-align: center;
+}
 
 
 /* -------------------RESPONSIVE ----------------------- */
@@ -237,8 +246,7 @@ p {
         margin-top: 4rem;
         font-family: var(--fuenteHeading);
         padding: 3rem 0;
-    }
-    
+    }   
 }
 
 @media (min-width: 768px){
@@ -248,9 +256,11 @@ p {
         display: grid;
         grid-template-columns: 2fr 1fr;
         column-gap: 4rem;
-    }     
+    }    
     
-    
+    .centrar__titulos{
+        text-align: left;
+    }
     /* -------------------------NOSOTROS------------------------ */
 
     /* PARA UBICARLOS EN LINEA Y DARLES TAMAÑO DEL 50% A CADA ELEMENTO */
@@ -276,16 +286,22 @@ p {
         gap: 2rem;
     }
 
-    .curso__label{
+    .curso:last-of-type {
+        border: none;
+    }
 
+    .curso__label{
+        font-family: var(--fuenteHeading);
+        font-weight: bold;
     }
 
     .curso__info {
-
+        font-weight: normal;
     }
 
-    .curso {
-
+    .curso__label,
+    .curso__info {
+        font-size: 2rem;
     }    
 
 }
