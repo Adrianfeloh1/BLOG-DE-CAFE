@@ -8,20 +8,30 @@
     <meta name="description" content="Página web de blog de café">
 
     <!-- Prefetch -->
-    <link rel="prefetch" href="nosotros.html" as="document">
+    <!-- Se le aplica a la siguiente página que usualmente el usuario visita mas -->
+    <link rel="prefetch" href="cursos.html" as="document">
+    
 
     <!-- Preload -->
     <link rel="preload" href="css/normalize.css" as="style">
     <link rel="stylesheet" href="css/normalize.css">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="css/style.css" as="style">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preload"
+        href="https://fonts.googleapis.com/css2?family=Averia+Sans+Libre:wght@300&family=Baloo+2:wght@500&family=Basic&family=Bebas+Neue&family=Nunito+Sans:wght@400;700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Ramabhadra&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        crossorigin="crossorigin" as="font">
     <link
         href="https://fonts.googleapis.com/css2?family=Averia+Sans+Libre:wght@300&family=Baloo+2:wght@500&family=Basic&family=Bebas+Neue&family=Nunito+Sans:wght@400;700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Ramabhadra&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
 
-    <link rel="preload" href="css/style.css" as="style">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+
+
+
 </head>
 
 <body>
@@ -56,7 +66,11 @@
 
             <article class="entrada">
                 <div class="entrada__imagen">
-                    <img src="img/blog1.jpg" alt="imagen blog">
+                    <picture>
+                        <source loading="lazy" srcset="img/blog1.webp" type="image/webp">
+                        <img loading="lazy" src="img/blog1.jpg" alt="imagen blog">
+                    </picture>
+                    
                 </div>
                 <div class="entrada__contenido">
                     <h4 class="no-margin"> Tipos de Grano de Café</h4>
@@ -69,7 +83,10 @@
 
             <article class="entrada">
                 <div class="entrada__imagen">
-                    <img src="img/blog2.jpg" alt="imagen blog">
+                    <picture>
+                        <source loading="lazy" srcset="img/blog2.webp" type="image/webp">
+                        <img loading="lazy" src="img/blog2.jpg" alt="imagen blog">
+                    </picture>
                 </div>
                 <div class="entrada__contenido">
                     <h4 class="no-margin"> Trés Deliciosas Recetas de Café</h4>
@@ -82,7 +99,10 @@
 
             <article class="entrada">
                 <div class="entrada__imagen">
-                    <img src="img/blog3.jpg" alt="imagen blog">
+                    <picture>
+                        <source loading="lazy" srcset="img/blog3.webp" type="image/webp">
+                        <img loading="lazy" src="img/blog3.jpg" alt="imagen blog">
+                    </picture>
                 </div>
                 <div class="entrada__contenido">
                     <h4 class="no-margin"> Beneficios del Café</h4>
@@ -108,7 +128,7 @@
                         <span class="widget-curso__info"> 20</span>
                         <!-- PARA PONER UN TEXTO DENTRO DE OTROS CON OTRO ESTILO-->
                     </p>
-                    <a href="entrada.html" class="boton boton--secundario">Más Información</a>
+                    <a href="entrada.html" class="boton boton--secundario">Más Información de Cursos </a>
                     <!-- CODIGO RECICLADO DEL BOTON DE LEER ENTRADA -->
                 </li>
 
@@ -141,4 +161,6 @@
             </nav>
         </div>
     </footer>
+
+    <script src="js/modernizr.js"></script>
 </body>

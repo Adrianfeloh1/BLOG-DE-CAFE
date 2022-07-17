@@ -137,5 +137,50 @@ PARA EL FORMULARIO SE DEFINEN DIV POR CADA CAMPO Y SE LE AGREGAN CLASES IGUALES
 
 ...
 
+--------------------------PERFORMANCE---------------------
 
+PARA MEJORAR EL PERFORMANCE DE LA PAGINA SE PUEDE USAR EL ATRIBUTO 
+
+LOADING CON VALOR = LAZY EN LAS IMAGENES ASÍ SE VAN DESCARGANDO CADA VEZ QUE EL USUARIO HACE SCROLL UNA POR UNA. 
+
+EL NO PONERLO OBLIGA A LA PAGINA A DESCARGAR TODO DE UNA SOLA VEZ Y SI SON MUCHAS IMAGENES AFECTA LA PAGINA
+
+<img loading="lazy" src="img/blog1.jpg" alt="imagen blog">
+
+CON EL ATRIBUTO PRELOAD DEFINIMOS QUE QUEREMOS QUE LA PAGINA CARGUE INMEDIATAMENTE PARA MEJORAR EL PERFORMANCE
+
+<link rel="preload" href="css/style.css" as="style">
+    <link rel="stylesheet" href="css/style.css">
+
+EL CARGA LA SIGUIENTE PAGINA QUE EL USUARIO VISITE PARA QUE CARGUE MAS RAPIDO 
+Se le aplica a la siguiente página que usualmente el usuario visita mas. No tiene sentido ponerselas a todas.
+
+
+---------------------------MODERNIZR ----------------------
+
+ES UN CODIGO QUE SE GENERA EN JS PARA PODER USAR LOS CAMBIOS DE EXTENSIONES DE IMAGEN EN LOS ESTILOS DE CSS
+
+
+TALES COMO :
+.webp .header {
+    background-image: url(../img/banner.webp);
+}
+
+.no-webp .header {
+    background-image: url(../img/banner.jpg);
+}
+.header {    
+    height: 60rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    /* PARA HACER FLUIR LA IMAGEN HACIA EL CENTRO DE LA MISMA CUANDO SE ACHIQUE*/
+    background-position: center;
+}
+
+entramos a modernizr.com => ad your detects => escogemos el tipo de archivo y => build => copiamos y creamos una carpeta js 
+y un archivo adentro llamado modernizr.js
+
+
+<script src="js/modernizr.js"></script>
 

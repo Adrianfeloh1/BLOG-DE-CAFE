@@ -88,9 +88,14 @@ p {
 }
 
 /* ---------------------------HEADER-------------------------- */
+.webp .header {
+    background-image: url(../img/banner.webp);
+}
 
-.header {
+.no-webp .header {
     background-image: url(../img/banner.jpg);
+}
+.header {    
     height: 60rem;
     background-size: cover;
     background-repeat: no-repeat;
@@ -231,8 +236,8 @@ p {
 .formulario {
     background-color: rgba(245, 245, 245, 0.62);
     margin: -37rem auto 0 auto;
-    width: 90%;
-    padding: 2rem;
+    width: 93%;
+    padding: 1rem;
     border-radius: 1rem;
 }
 
@@ -240,7 +245,7 @@ p {
     display: flex;   
     margin-bottom: 2rem;  
     text-align: left;
-    gap: 1rem;
+   
 }
 
 .campo__label {
